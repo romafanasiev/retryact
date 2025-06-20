@@ -1,5 +1,3 @@
-import { ELEMENT_TYPES } from "./entities";
-
 const element = {
   type: "h1",
   props: {

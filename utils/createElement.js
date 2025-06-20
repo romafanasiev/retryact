@@ -1,4 +1,4 @@
-export default createElement = (type, props, ...children) => {
+export const createElement = (type, props, ...children) => {
   return {
     type,
     props: {
@@ -6,7 +6,7 @@ export default createElement = (type, props, ...children) => {
       children: childrenMapper(children),
     },
   }
-}
+};
 
 const createTextElement = (text) => {
   return {
@@ -16,7 +16,7 @@ const createTextElement = (text) => {
       children: [],
     },
   }
-}
+};
 
 const childrenMapper = (children) => {
   return children.map((child) => {
